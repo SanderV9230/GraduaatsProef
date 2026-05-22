@@ -6,13 +6,16 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/**/*.test.js --reporter mocha-junit-reporter --timeout 60000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^17.4.2",
+    "mocha": "^11.7.6",
+    "mocha-junit-reporter": "^2.2.1",
     "selenium-webdriver": "^4.43.0"
   },
   "devDependencies": {

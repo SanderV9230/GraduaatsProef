@@ -1,26 +1,34 @@
+import homePage from '../support/pages/homePage'
+import loginPage from '../support/pages/loginPage'
+
 describe('Test 1 - Login and verify home page', () => {
 
   beforeEach(() => {
     cy.visit('/')
+    cy.login()
   })
 
-  it('should log in and verify all home page elements are visible', () => {
-
-    // --- LOGIN ---
-    cy.get('#input-username').type(Cypress.env('APP_USERNAME'))
-    cy.get('#input-password').type(Cypress.env('APP_PASSWORD'))
-    cy.get('#button-login').click()
-
-    // --- VERIFY URL CHANGED TO HOME ---
+  it('should redirect to /overview after login', () => {
     cy.url().should('include', '/overview')
-
-    // --- VERIFY HOME PAGE ELEMENTS ARE VISIBLE ---
-    cy.get('#navBar').should('be.visible')
-    cy.get('#enroll-button').should('be.visible')
-    cy.get('#enrolled-button').should('be.visible')
-    cy.get('#create-course-button').should('be.visible')
-    cy.get('#card-component-container').should('be.visible')
-
   })
 
+  it('should show the navigation bar', () => {
+    homePage.navBar.should('be.visible')
+  })
+
+  it('should show the enroll button', () => {
+    homePage.enrollButton.should('be.visible')
+  })
+
+  it('should show the enrolled button', () => {
+    homePage.enrolledButton.should('be.visible')
+  })
+
+  it('should show the create course button', () => {
+    homePage.createCourseButton.should('be.visible')
+  })
+
+  it('should show an empty course list when no courses are visible', () => {
+    homePage.cardComponentContainer.should('be.empty')
+  })
 })

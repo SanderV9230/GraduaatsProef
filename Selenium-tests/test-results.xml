@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="30.253" tests="6" failures="2">
+  <testsuite name="Root Suite" timestamp="2026-05-22T06:38:20" tests="0" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test 1 - Login and verify home page" timestamp="2026-05-22T06:38:20" tests="6" file="C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\login.test.js" time="30.251" failures="2">
+    <testcase name="Test 1 - Login and verify home page &quot;before each&quot; hook for &quot;should redirect to /overview after login&quot;" time="30.247" classname="&quot;before each&quot; hook for &quot;should redirect to /overview after login&quot;">
+      <failure message="Timeout of 30000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\login.test.js)" type="Error"><![CDATA[Error: Timeout of 30000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\login.test.js)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)]]></failure>
+    </testcase>
+    <testcase name="Test 1 - Login and verify home page &quot;after each&quot; hook for &quot;should redirect to /overview after login&quot;" time="0.000" classname="&quot;after each&quot; hook for &quot;should redirect to /overview after login&quot;">
+      <failure message="Cannot read properties of undefined (reading &apos;quit&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'quit')
+    at Context.<anonymous> (tests\login.test.js:31:22)
+    at process.processImmediate (node:internal/timers:491:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
