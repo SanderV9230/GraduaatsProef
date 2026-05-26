@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="30.253" tests="6" failures="2">
-  <testsuite name="Root Suite" timestamp="2026-05-22T06:38:20" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="118.195" tests="21" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-05-22T11:21:58" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="Test 1 - Login and verify home page" timestamp="2026-05-22T06:38:20" tests="6" file="C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\login.test.js" time="30.251" failures="2">
-    <testcase name="Test 1 - Login and verify home page &quot;before each&quot; hook for &quot;should redirect to /overview after login&quot;" time="30.247" classname="&quot;before each&quot; hook for &quot;should redirect to /overview after login&quot;">
-      <failure message="Timeout of 30000ms exceeded. For async tests and hooks, ensure &quot;done()&quot; is called; if returning a Promise, ensure it resolves. (C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\login.test.js)" type="Error"><![CDATA[Error: Timeout of 30000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\login.test.js)
-    at listOnTimeout (node:internal/timers:594:17)
-    at process.processTimers (node:internal/timers:529:7)]]></failure>
+  <testsuite name="Test 2 - Create a course and verify it appears in the course list" timestamp="2026-05-22T11:21:58" tests="0" file="C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\create-course.test.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Create course form visibility" timestamp="2026-05-22T11:21:58" tests="13" file="C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\create-course.test.js" time="69.568" failures="0">
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the create course form" time="0.027" classname="should show the create course form">
     </testcase>
-    <testcase name="Test 1 - Login and verify home page &quot;after each&quot; hook for &quot;should redirect to /overview after login&quot;" time="0.000" classname="&quot;after each&quot; hook for &quot;should redirect to /overview after login&quot;">
-      <failure message="Cannot read properties of undefined (reading &apos;quit&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'quit')
-    at Context.<anonymous> (tests\login.test.js:31:22)
-    at process.processImmediate (node:internal/timers:491:21)]]></failure>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the course name input" time="0.031" classname="should show the course name input">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the description input" time="0.030" classname="should show the description input">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the image upload button" time="0.043" classname="should show the image upload button">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the submit button" time="0.030" classname="should show the submit button">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the course type radio buttons" time="0.105" classname="should show the course type radio buttons">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the location select" time="0.034" classname="should show the location select">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the date input" time="0.025" classname="should show the date input">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the time start input" time="0.025" classname="should show the time start input">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the time end input" time="0.026" classname="should show the time end input">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the teacher input" time="0.034" classname="should show the teacher input">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the phone input" time="0.038" classname="should show the phone input">
+    </testcase>
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form visibility should show the email input" time="0.031" classname="should show the email input">
+    </testcase>
+  </testsuite>
+  <testsuite name="Create course form and see it added to the list" timestamp="2026-05-22T11:23:08" tests="1" file="C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\create-course.test.js" time="11.693" failures="0">
+    <testcase name="Test 2 - Create a course and verify it appears in the course list Create course form and see it added to the list should create a course and see it in the list" time="7.398" classname="should create a course and see it in the list">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test 3 - Upload Image" timestamp="2026-05-22T11:23:20" tests="1" file="C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\imageUpload.test.js" time="5.643" failures="0">
+    <testcase name="Test 3 - Upload Image should upload an image and see it in the course preview" time="0.065" classname="should upload an image and see it in the course preview">
+    </testcase>
+  </testsuite>
+  <testsuite name="Test 1 - Login and verify home page" timestamp="2026-05-22T11:23:25" tests="6" file="C:\Users\sande\GraduaatsProef\GraduaatsProef\Selenium-tests\tests\login.test.js" time="31.289" failures="0">
+    <testcase name="Test 1 - Login and verify home page should redirect to /overview after login" time="0.006" classname="should redirect to /overview after login">
+    </testcase>
+    <testcase name="Test 1 - Login and verify home page should show the navigation bar" time="0.023" classname="should show the navigation bar">
+    </testcase>
+    <testcase name="Test 1 - Login and verify home page should show the enroll button" time="0.043" classname="should show the enroll button">
+    </testcase>
+    <testcase name="Test 1 - Login and verify home page should show the enrolled button" time="0.031" classname="should show the enrolled button">
+    </testcase>
+    <testcase name="Test 1 - Login and verify home page should show the create course button" time="0.025" classname="should show the create course button">
+    </testcase>
+    <testcase name="Test 1 - Login and verify home page should show an empty course list when no courses are visible" time="0.036" classname="should show an empty course list when no courses are visible">
     </testcase>
   </testsuite>
 </testsuites>

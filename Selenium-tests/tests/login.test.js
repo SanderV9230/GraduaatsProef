@@ -1,21 +1,12 @@
+require('chromedriver');
 require('dotenv').config();
+const { login } = require('../helper');
 const { Builder, until, By } = require('selenium-webdriver');
 const assert = require('assert');
 const LoginPage = require('../pages/LoginPage');
 const HomePage = require('../pages/HomePage');
 
 const BASE_URL = process.env.BASE_URL;
-
-async function login(driver) {
-    const loginPage = new LoginPage(driver);
-    const username = await loginPage.usernameInput();
-    await username.sendKeys(process.env.APP_USERNAME);
-    const password = await loginPage.passwordInput();
-    await password.sendKeys(process.env.APP_PASSWORD);
-    const loginBtn = await loginPage.loginButton();
-    await loginBtn.click();
-    await driver.wait(until.urlContains('/overview'), 5000);
-}
 
 describe('Test 1 - Login and verify home page', function () {
     this.timeout(30000);
@@ -24,7 +15,7 @@ describe('Test 1 - Login and verify home page', function () {
     beforeEach(async function () {
         driver = await new Builder().forBrowser('chrome').build();
         await driver.get(BASE_URL);
-        await login(driver);
+        await login(driver, process.env.APP_USERNAME, process.env.APP_PASSWORD);
     });
 
     afterEach(async function () {

@@ -19,6 +19,6 @@
     "selenium-webdriver": "^4.43.0"
   },
   "devDependencies": {
-    "chromedriver": "^148.0.2"
+    "chromedriver": "^148.0.4"
   }
 }
